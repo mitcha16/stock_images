@@ -10,6 +10,12 @@ end
 gem 'rails', '~> 5.1.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'bootstrap-sass'
+gem 'rails-controller-testing'
+gem 'will_paginate',           '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'pry'
+gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
