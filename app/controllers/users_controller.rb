@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @images = #user images
+    #@images = user images
   end
 
   def new
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
-  endd l
+  end
 
   def create
     @user = User.new(user_params)
