@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :images
 
   resources :users
+  post 'save', to: 'users#save'
+  post 'remove', to: 'users#remove'
   get  '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
 

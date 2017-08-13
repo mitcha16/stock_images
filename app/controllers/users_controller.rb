@@ -7,7 +7,19 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    #@images = user images
+    @images = @user.images
+  end
+
+  def save
+    @user = current_user
+    @user.images << Image.create(url: params[:url])
+  end
+
+  def remove
+    image = Image.find_by(url: params[:url])
+    image.delete
+    flash[:success] = "Image Deleted!"
+    redirect_to user_path(User.find(params[:user_id]))
   end
 
   def new
