@@ -1,9 +1,16 @@
 <% provide(:title, 'Users') %>
-<h1>Users</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center v-center">
+      <h1>Users</h1>
+    </div>
 
+    <ul class="users">
+      <% @users.each do |user| %>
+      <%= render user %>
+      <br>
+      <% end %>
+    </ul>
 
-<ul class="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-  <% end %>
-</ul>
+  </div>
+</div>
