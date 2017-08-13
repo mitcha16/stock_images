@@ -11,6 +11,8 @@ gem 'rails', '~> 5.1.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'bootstrap-sass'
+gem 'unsplash'
+gem "react-rails"
 gem 'rails-controller-testing'
 gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'

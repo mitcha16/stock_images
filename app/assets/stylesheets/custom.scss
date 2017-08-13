@@ -22,3 +22,27 @@ $gray-medium-light: #eaeaea;
 body {
   padding-top: 60px;
 }
+
+
+#search-box {
+  margin: 2%;
+  margin-left: 78%;
+}
+
+#search-results {
+  float: right;
+  width: 50%;
+}
+
+#results {
+  height: 20em;
+  overflow: auto;
+}
+
+.result:hover {
+  color: #FF9800;
+}
+
+#search {
+  margin-left: -400%;
+}
